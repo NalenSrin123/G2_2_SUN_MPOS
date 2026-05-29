@@ -1,0 +1,11 @@
+{
+    "name": "Waiter",
+    "alias": "waiter",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Waiter\\Providers\\WaiterServiceProvider"
+    ],
+    "files": []
+}
