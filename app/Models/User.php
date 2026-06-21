@@ -21,6 +21,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'role',
     ];
 
     /**
@@ -45,4 +46,15 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+    //check if user is admin
+    public function isAdmin()
+    {
+        return $this->role === 'admin';
+    }
+    //check if user is chef
+    public function chef()
+    {
+        return $this->role === 'chef';
+    }
 }
+
